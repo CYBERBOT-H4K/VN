@@ -1,0 +1,769 @@
+
+
+REGNO:  EX.NO: 09
+NUMERIC FUNCTION:-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Numeric Functions</title>
+</head>
+<body>
+<h1><center>Numeric Functions</center></h1>
+<?php
+echo "Absolute value of-13.75 : ".abs(-13.75); echo "<br>";
+echo "Square root value of 256 : ".sqrt(256); echo "<br>";
+echo "Power value of27: "."<sup>3</sup> is ".pow(27,3); echo "<br>";
+echo "Ceil value of 13.75: ".ceil(l3.75); echo "<br>";
+echo "Octal to Decimal of 16 is : ".octdec(16); echo "<br>";
+echo "Binary to Decimal 10101000 is : ".bindec(10 l O1000); echo "<br>";
+echo "Floor value of 13.75 ".floor(l3.75); echo "<br>";
+echo "Decimal to Octal of 1456 is: ".decoct(l456); echo "<br>";
+echo "Decimal to HexaDecimal of 1456 is: ".dechex(1456); echo "<br>";
+echo "Radiant to degree of 2.2689 : ".rad2deg(2.2689); echo "<br>";
+echo "Degree to radiant of 130 is ".deg2rad(l30); echo "<br>";
+echo "Max value of 45,94,87 is : ".max(45,94,87);
+
+echo "<br>";
+echo "Min value of 45,94,87 is: ".min(45,94,87); echo "<br>";
+echo "Integer value of 15.89 is: ".intval(l5.89); echo "<br>";
+echo "Float value of 15.89 is: ".floatval(l5.89); echo "<br>";
+echo "Is numeric of 15.89 is : ".is numeric(l 5.89); echo "<br>";
+echo "Decimal to binary of 10 is : ".decbin(1O); echo "<br>";
+?>
+</body>
+</html>
+OUTPUT:-
+
+Absolu1e ,·alue of -13.75: 13.75 Square root ,-aJue of256 16 Power valueof27: 3 IS 19683
+Ceil value of 13 75 14
+Octal to D=al of16ts: 14
+Bmary 10 Decunal 10101000 is: 168
+Floor value of 13.75 13
+Decimal to Octal of 1456 is : 2660 Decimal to HexaDecimal of 1456 is : 5b0
+Radiant to deyee of:2-2689 : 129.99839-113723 Degree to radiant of 130 is 2.2689280275926 Ma.'< ,·alue of -15,9-1,87 as 9-1
+Min value of -15,94,87 is : -15
+Integer \'alue of 15 89 IS  15
+Float value of 15.89 is: 15.89 Is numeric of 15.89 is I
+Decimal to binwyof 10 is: 1010
+
+
+
+EX.N0:10:-
+STRING FUNCTION:-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, injtial-scale=1.0">
+<title>String Functions</title>
+</bead>
+<body>
+<h I style="text-align:center;">String Functions</h 1>
+
+<form method="post"> Enter the String:
+<input type="text" name="str" required>
+<input type="submit" name="submit" value="Enter">
+</form>
+
+<?php
+if (isset($_POST['submit'])) {
+$str =$_POST['str'];
+echo "Length of the String: " . strlen($str); echo "<br>";
+echo "Lowercase of the String: " . strtolower($str); echo "<br>";
+echo "Uppercase of the String: " . strtoupper($str); echo "<br>";
+echo "Reverse of the String:" . strrev($str); echo "<br>";
+echo "Uppercase of the First Letter: " . ucfirst($str); echo "<br>";
+echo "Uppercase of all the Words in \"$str\": " . ucwords($str); echo "<br>";
+echo "Repetition of\"$str\": " . str_repeat($str, 3); echo "<br>";
+echo "Word Count of\"$str\": " . str_word_count($str); echo "<br>";
+echo "Trimmed String: " . trim($str); echo "<br>";
+echo "Substring (1,2): " . substr($str, 1, 2); echo "<br>";
+echo "Position of 'World' in 'Hello World':" . strpos("Hello World", "World"); echo "<br>";
+echo "Replacing a String: " . str_replace("World", "PHP", "Hello World"); echo "<br>";
+echo "Comparing Strings: " . strcmp("abc", "abc"); echo "<br>";
+echo "Case-insensitive Comparison: " . strcasecmp("ABC", "abc"); echo "<br>";
+echo "Counting Substring 'Hello': " . substr_count("Hello Hello", "Hello"); echo "<br>";
+echo "Padding a String:". str_pad("PHP", 8, "*");
+echo "<br>";}
+?>
+
+</body>
+</bani>
+OUTPUT:-
+
+Ent<t theSmng.?	?IEn1erI
+Leng,h of lhc Sm.ng: S
+Lowercase of lheSmng. ti&cr UPl"'rca.scof the String: TIGER Reverse of lheString· reg11 UP!"'rca.scoftbe Fust lencr· T,gcr
+Uppercase of all the Words111"tiacr"•T>&er Rq,e1iuon of"ug<t". ug<tngerugcr
+Word Count of"tigcr" I Trunmcd Stnng. 11gcr Substring(1.2): ig
+Posmon of 'World' m'Hello \VOt'ld'·6 R,placing a String: Hello Pl:IP Comparing Strmgs 0
+C?•imnisin,-? Comparison: 0
+Cowi11ng Substring 'Hello'· 2
+Padding a Stru,g- PHP•••••
+
+
+
+
+
+
+REGNO:EX.NO: 11 COOKIES:-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cookies in PHP</title>
+</head>
+<body>
+<b2><font face="Verdona, Arial,Helvetica, Sans-serif">Cookies in PHP</b2>
+<?php
+$cookie_name="user";
+$cookie value="Subha"'·
+setcookie($cook:ie_name,$cookie_value,time()+(86400*30),"/");
+if(!isset($_COOKIE[$cookie_name]))
+{
+echo "Cookie Named ".$cookie_name." isset!<br><br>";
+}
+else
+{
+echo "Cookie Named ".$cookie_name." isset!</br></br>"; echo "Value is ".$_COOKIE[$cookie_name);
+}
+?>
+<br><br>
+<p>
+<strong>Note : </strong> You might have to reload the page to see the value of the cookie
+<Ip>
+</body>
+</html>
+OUTPUT:-
+
+Cookies in PHP
+CookieNameduserisseU
+ValueisSubha
+
+Note: Youm?hlhaveloreloadthepagetoseethevalueofthecm
+
+
+
+
+EX.NO: 12 SESSION:-
+
+Login.php
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-eguiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session</title>
+</head>
+
+<body>
+
+<?php session_start();
+
+if($- SERVER["REQUEST- METHOD"]= "POST") {
+$uname = $ POST["uname"] ?? 1111;
+$course= $_POST["course"]?? "";
+
+$_SESSION["uname"] = $uname;
+$_SESSION["course"] = $course;
+
+echo "Session created successfully.<br>";
+echo "<a href='welcome.php'>Go to Welcome page</a>";
+}
+?>
+
+<form method="POST" action=""> Enter Username :
+<input type="text" name="uname" required>
+
+<br><br>
+
+Enter Course name :
+
+<input type="text" name="course" required>
+
+<br><br>
+
+<input type="submit" value="login">
+</form>
+
+</body>
+</html>
+
+Welcome.php
+<?php session_start();
+
+echo "Welcome". $_SESSION["uname"]. "<br>"; echo "Your course is". $_SESSION["course"];
+?>
+
+OUTPUT:-
+
+
+
+
+
+ EX.NO: 13
+SIMPLE CALCULATOR:-
+
+<!DOCTYPE html>
+<html lang="en">
+<bead>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, injtial-scale=1.0">
+<title>Simple Calculator</title>
+
+<style>
+* {
+box-sizing: border-box; margin: 0;
+padding: 0;
+font-famjly: Arial, sans-serif;
+}
+
+body {
+height: l00vh; display: flex;
+justify-content: center; align-items: center;
+background: linear-gradient(l35deg, #667eea, #764ba2);
+}
+
+.calculator { width: 320px; padding: 20px;
+background: #222; border-radius: 20px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.display { width: 100%; height: 70px;
+margin-bottom: 20px; padding: l 5px; border: none;
+border-radius: I0px; background: #eee; color: #222;
+font-size: 32px; text-align: right; outline: none;
+}
+
+.buttons { display: grid;
+grid-template-columns: repeat(4, 1fr); gap: l0px;
+}
+
+button {
+height: 60px; border: none; border-radius: 12px; font-size: 22px; cursor: pointer; background: #444; color: white; transition: 0.2s;
+}
+
+button:hover { background: #666; transform: scale(1.05);
+}
+
+.operator {
+background: #ff9500;
+}
+
+.operator:hover { background: #ffad33;
+}
+
+.clear {
+background: #e74c3c;
+}
+
+.clear:hover { background: #ff6655;
+}
+
+.equal {
+background:#28a745;
+}
+
+.equal:hover { background:#34c759;
+}
+
+.zero {
+grid-column: span 2;
+}
+</style>
+</head>
+
+<body>
+
+<div class="calculator">
+
+<input type="text" id="display" class="display" value="O" disabled>
+
+<div class="buttons">
+
+<button class="clear" onclick="clearDisplayQ">C</button>
+<button onclick="deleteLast()"><Zl</button>
+<button class="operator" onclick="appendValue('%')">%</button>
+<button  class="operator"  onclick="appendVa Iue('/')"?utton>
+
+<button onclick="appendValue('7')">7</button>
+<button onclick="appendValue('8')">8</button>
+<button onclick="appendValue('9')">9</button>
+<button class="operator" onclick="appendValue('*')">x</button>
+
+<button onclick="appendValue('4')">4</button>
+<button onclick="appendValue('5')">5</button>
+<button onclick="appendValue('6')">6</button>
+
+<button class="operator" onclick="appendValue('-')">-</button>
+
+<button onclick="appendValue(' l ')">1</button>
+<button onclick="appendValue('2')">2</button>
+<button onclick="appendValue('3')">3</button>
+<button class="operator" onclick="appendValue('+')">+</button>
+
+<button class="zero" onclick="appendValue('O')">O</button>
+<button onclick="appendValue('.')">.</button>
+<button class="equal" onclick="calculate()">=</button>
+
+</div>
+</div>
+
+<script>
+let display= document.getElementByld("display");
+
+function appendValue(value) {
+if (display.value=	"O" II display.value=	"Error") { display.value= value;
+} else {
+display.value+= value;
+}
+}
+
+function clearDisplay() { display.value= "O";
+}
+
+function deleteLast() {
+if (display.value.length> 1) { display.value= display.value.slice(O, -1);
+} else {
+display.value= "O";
+}
+}
+
+function calculate() { try {
+display.value= eval(display.value);
+} catch (error) { display.value = "Error";
+}
+}
+</script>
+
+</body>
+</html>
+
+OUTPUT:-
+
+
+
+
+
+
+
+
+
+
+ EX.NO: 14 FACTORIAL:-
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Factorial Calculator</title>
+
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+body {
+min-height: I00vh; display: flex;
+justify-content: center; align-items: center;
+background: linear-gradient(l 35deg, #667eea, #764ba2);
+}
+
+.container { width: 350px; padding: 30px;
+background: white; border-radius: l 5px; text-align: center;
+box-shadow: 0 l0px 30px rgba(0, 0, 0, 0.3);
+}
+
+hl {
+color: #333;
+margin-bottom: 20px;
+}
+
+input {
+width: 100%; padding: l 2px;
+border: 2px solid #667eea; border-radius: 8px;
+
+font-size: l6px; outline: none;
+margin-bottom: l 5px;
+}
+
+button {
+width: 100%; padding: l 2px; border: none; border-radius: 8px;
+background: #667eea; color: white;
+font-size: l6px; cursor: pointer; transition: 0.3s;
+}
+
+button:hover { background:#4c63c7;
+}
+
+#result {
+margin-top: 20px; padding: 12px; background: #filf2ff; border-radius: 8px; color: #333;
+font-size: l 8px; font-weight: bold;
+word-wrap: break-word;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h l>Factorial Calculator</h l>
+
+<input type="number" id="number" placeholder="Enter a number" min="0">
+
+<button onclick="calculateFactorialQ">Calculate Factorial</button>
+
+<div id="result">Result will appear here</div>
+</div>
+
+<script>
+function calculateFactorial() {
+
+let num = Number(document.getElementByld("number").value); let result= 1;
+
+if (num < 0 II !Number.islnteger(num)) { document.getElementByld("result").innerHTML =
+  "Please enter a positive integer."; return;
+}
+
+for (let i = 1; i <= num; i++) { result = result * i;
+}
+
+document.getElementByld("result").innerHTML = num +"!="+result;
+}
+</script>
+
+</body>
+</html>
+OUTPUT:-
+
+
+
+
+
+
+
+
+
+XML:
+students{
+    display: block;
+    background: #eef5ff;
+    padding: 30px;
+    font-family: Arial;
+}
+
+student{
+    display: block;
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid #3366cc;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px gray;
+}
+
+name{
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    color: #3366cc;
+    margin-bottom: 10px;
+}
+
+rollno,department,year,gender,age,email,phone,city,college,cgpa{
+    display: block;
+    padding: 5px;
+}
+
+
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="./stud.css"?>
+
+<students>
+    <student>
+        <rollno>25PCA518</rollno>
+        <name>Subha</name>
+        <department>MCA</department>
+        <year>2nd Year</year>
+        <gender>Female</gender>
+        <age>22</age>
+        <email>subha@gmail.com</email>
+        <phone>9876543210</phone>
+        <city>Chennai</city>
+        <college>ABC College</college>
+        <cgpa>8.5</cgpa>
+    </student>
+    <student>
+        <rollno>25PCA519</rollno>
+        <name>Iswarya</name>
+        <department>MCA</department>
+        <year>2nd Year</year>
+        <gender>Female</gender>
+        <age>22</age>
+        <email>iswarya@gmail.com</email>
+        <phone>9876543211</phone>
+        <city>Madurai</city>
+        <college>ABC College</college>
+        <cgpa>9.0</cgpa>
+    </student>
+</students>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REGNO: 25PCA518 EX.NO: 15 LOGIN:-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=l .0">
+<title>Login Form</title>
+
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+body {
+height: l00vh; display: flex;
+justify-content: center; align-items: center;
+background: linear-gradient(l 35deg, #667eea, #764ba2);
+}
+
+.login-box { width: 350px; padding: 35px;
+background: white; border-radius: l 5px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.login-box hl {
+text-align: center; color: #333;
+margin-bottom: 25px;
+}
+
+.input-box {
+margin-bottom: 20px;
+}
+
+.input-box label { display: block; margin-bottom: 7px; color: #333;
+font-weight: bold;
+}
+
+.input-box input { width: 100%; padding: 12px;
+border: 2px solid #ddd; border-radius: 8px; outline: none;
+font-size: l 5px;
+}
+
+.input-box input:focus { border-color: #667eea;
+}
+
+.login-btn { width: 100%; padding: 12px; border: none;
+border-radius: 8px; background: #667eea; color: white;
+font-size: l 7px; cursor: pointer; transition: 0.3s;
+
+}
+
+.login-btn:hover { background:#4c63c7;
+}
+
+#message {
+text-align: center; margin-top: l 8px; font-weight: bold;
+}
+
+.forgot {
+display: block; text-align: right; margin-top: -10px;
+margin-bottom: 2Opx; color: #667eea;
+text-decoration: none; font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h l>Login</hl>
+
+<form onsubmit="login(event)">
+
+<div class="input-box">
+<label>Username</label>
+<input type="text" id="username" placeholder="Enter usemame">
+</div>
+
+<div class="input-box">
+<label>Password</label>
+<input type="password" id="password" placeholder="Enter password">
+</div>
+
+<a href="#" class="forgot">Forgot Password?</a>
+
+<button type="submit" class="login-btn">Login</button>
+
+<p id="message"></p>
+
+</form>
+
+</div>
+
+<script>
+function login(event) { event.preventDefault();
+
+let username = document.getElementById("username").value; let password= document.getElementByld("password").value; let message= document.getElementByld("message");
+
+// Sample username and password let correctUsername = "subba"; let correctPassword = "2006";
+
+if(usemame =""II password='"') { message.innerHTML = "Please fill in all fields."; message.style.color= "red";
+}
+else if(username =		co1TectUsemame && password =	correctPassword) {
+
+message.innerHTML = "Login Successful!"; message.style.color= "green";
+}
+else {
+message.innerHTML = "Invalid username or password."; message.style.color= "red";
+}
+}
+</script>
+
+</body>
+</html>
+OUTPUT:-
+
+REGNO: 25PCAS18 EX.NO: 16
+EMPLOYEE DETAIL USING DATABASE:-
+Empdb.sql:-
+CREATE DATABASE employee_management; USE employee_management;
+CREATE TABLE employees (
+id INT AUTO_INCREMENT PRIMARY KEY,
+employee_id VARCHAR(20) NOT NULL UNIQUE,
